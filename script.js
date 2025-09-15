@@ -11,6 +11,9 @@ h1 {
 
 
 // listen to a button click
+
+
+// grab the button element from our page
 let buttonElement = document.querySelector("button")
 // console.log(buttonElement) // sjekk at buttonElement virker, hvis det står null i konsollen da virker den ikke
 
@@ -24,6 +27,7 @@ let buttonElement = document.querySelector("button")
 
 function minFunksjon () {
     console.log("HEIHEI")
+    document.querySelector("h1").style = "color: green;"
     // here we can do something :)
 }
 
@@ -43,4 +47,3 @@ document.querySelector("button").addEventListener("click", function() {
 
 
 // make h1 green
-// document.querySelector("h1").style = "color: green;"
