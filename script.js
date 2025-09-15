@@ -1,46 +1,45 @@
-// grab the button element from our page
-let buttonElement = document.querySelector("button")
+// Mission: Get both buttons to work
 
 
-function changeH1Color () {
-    randomColor()
-    // document.querySelector("h1").style = "color: green;"
+// I. Handle the green-color button:
+
+// 1. Grab the button element with querySelector:
+let buttonElementGreen = document.querySelector("button")
+// 2. To see if it worked, we can then console.log it.
+console.log(buttonElementGreen)
+// 3. Try to use addEventListener...
+
+
+function makeItGreen() {
+    // Function shall change the color of the H1 element to green
+
+    // 1. Grab the h1 element:
+    let h1Element = document.querySelector("h1")
+    // console.log(h1Element)
+    h1Element.style = "color: green;"
 }
 
-buttonElement.addEventListener("click", changeH1Color)
+buttonElementGreen.addEventListener("click", makeItGreen)
 
 
 
 
-console.log("hi")
 
-console.log(2 - 1)
+// II. Handle the red-color button:
+// 1. Grab the red-button element with querySelector:
+let buttonElementRed = document.querySelector("#button-red")
+// 2. To see if it worked, we can then console.log it.
 
-console.log(buttonElement)
+// 3. Try to use addEventListener...
 
 
-// Math.random() gir oss et tall mellom 0.0 og 1.0
+function makeItRed() {
+    // Function shall change the color of the H1 element to green
 
-// console.log(Math.random() * 100)
-
-// Random color example implementation:
-
-// Color is an RGB value, in css: rgb(0,0,0) - rgb(255,255,255), rgb(255,0,0)
-
-console.log(Math.random() * 255)
-console.log(Math.random() * 255)
-console.log(Math.random() * 255)
-
-function randomColor() {
-
-    let redValue = Math.random() * 255
-    let greenValue = Math.random() * 255
-    let blueValue = Math.random() * 255
-
-    console.log("here is your random color: ")
-    console.log(redValue, greenValue, blueValue)
-
-    document.querySelector("h1").style = "color: rgb(" +  redValue + "," + greenValue + "," + blueValue + ");"
+    // 1. Grab the h1 element:
+    let h1Element = document.querySelector("h1")
+    // console.log(h1Element)
+    h1Element.style = "color: red;"
 }
 
-randomColor()
+buttonElementRed.addEventListener("click", makeItRed)
