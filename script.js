@@ -1,52 +1,46 @@
-// Dette er en kode kommentar
-
-// Bruke console.log metoden for å skrive ut meldingen hei
-console.log("hei")
-
-/* Flere linjer med kommentar 
-Kommentar her
-og her 
-og her,
-osv...
-
+// how to select a html tag with JS:
+/* With CSS we would:
+h1 {
+  color: red;
+}
 */
 
-// En text i kodespråk er også kjent som en "string" eller "streng på norsk"
+// as above in JS
+// document.querySelector("h1").style = "color: red;"
 
-// Vi kan bruke enten " eller ' (single eller doublequotes) for å lage strings i Javascript
-console.log('hallo, hvem er du?')
-// Annet eksempel på string:
-console.log("2 + 2")
 
-// tall & matte eksempler:
-console.log(2 + 2)
-console.log(2 * 5)
-console.log(2 / 5)
-console.log(0.5 + 2)
-// Negative tall fungerer også:
-console.log(-5 + 2)
-// desimaltall fungerer, men vær obs på presisjon hvis dere har mer enn 6 desimaler bak .
-console.log(-0.000000000005 + 1000.0000005)
 
-// lage variabel
-// 1. bruk kodeord let
-// 2. sett et navn på variabelen
-// 3. bruk "assignment operator" (=)
-// 4. set verdi bak = til noe
-let greeting = "Heisann"
+// listen to a button click
+let buttonElement = document.querySelector("button")
+// console.log(buttonElement) // sjekk at buttonElement virker, hvis det står null i konsollen da virker den ikke
 
-console.log(greeting)
+// create a function that does something
 
-console.log(greeting)
+// 1. use the keyword function to declare a function
+// 2. followed by a name of your choice, ex: minFunksjon
+// 3. followed by ()
+// 4. followed by {}
+// function specific code goes inside the { ..  }
 
-// declare a variable and set its value to a number:
-let number1 = 2
-let number2 = 5.25
+function minFunksjon () {
+    console.log("HEIHEI")
+    // here we can do something :)
+}
 
-console.log(number1 * number2 + number1)
+// Gå inni buttonElement
+// Legg til en event-listener
+// Parameter 1: Type of event, in our case "click"
+// Parameter 2: Provide some function to run
+buttonElement.addEventListener("click", minFunksjon)
 
-// a variable can be almost "anything", even a console.log function
-let minKonsoll = console.log
 
-minKonsoll("hei!")
+/* 
+document.querySelector("button").addEventListener("click", function() {
+    console.log("Hi")
+})
+*/
 
+
+
+// make h1 green
+// document.querySelector("h1").style = "color: green;"
