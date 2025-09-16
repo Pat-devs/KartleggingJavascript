@@ -1,5 +1,7 @@
+// get the current number element
+let currentNumberEl = document.querySelector("#current-number")
+console.log(currentNumberEl)
 // get the button elements and store them as variables, for ease of access
-
 
 let buttonPlus = document.querySelector("#button-plus")
 let buttonMinus = document.querySelector("#button-minus")
@@ -7,19 +9,11 @@ let buttonMinus = document.querySelector("#button-minus")
 // set number to a value with the assignment operator (=)
 let number = 0
 
-
-// increase logic:
+// Function increases the variable called number with + 1
+// And then displays that number in the textContent property of an element called currentNumberEl
 function increase() {
-    console.log("Number is: ",  number)
-    
-    // increment a number in javascript:
-    
-    // different ways to increment a number:
-
-    // number = number + 1
-    // number += 1
-    // number++
-    // ++number
+    number = number + 1 // increment the number
+    currentNumberEl.textContent = number // change the html text to a value
 }
 
 buttonPlus.addEventListener("click", increase)
