@@ -3,19 +3,11 @@ body {
     background-color: #444;
 }
 
-#main-text {
-    color: aqua;
-}
-
 .green-text {
-    font-size: smaller;
     color: green;
 }
 .red-text {
-    font-size: xx-large;
     color: red;
-    background-color: aqua;
-    border: 5px dashed yellow;
 }
 .black-text {
     color: black;
