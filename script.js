@@ -1,45 +1,24 @@
-// Mission: Get both buttons to work
 
-
-// I. Handle the green-color button:
-
-// 1. Grab the button element with querySelector:
-let buttonElementGreen = document.querySelector("button")
-// 2. To see if it worked, we can then console.log it.
-console.log(buttonElementGreen)
-// 3. Try to use addEventListener...
+// Grab the h1 element:
+let h1Element = document.querySelector("h1")
+// Grab the green button element by tagname
+let buttonElementGreen = document.querySelector("#button-green")
+// Grab the red button element by tagname
+let buttonElementRed = document.querySelector("#button-red")
+// Grab the red button element by tagname
+let buttonElementBlack = document.querySelector("#button-blackß")
 
 
 function makeItGreen() {
-    // Function shall change the color of the H1 element to green
-
-    // 1. Grab the h1 element:
-    let h1Element = document.querySelector("h1")
-    // console.log(h1Element)
-    h1Element.style = "color: green;"
+    // h1Element.style = "color: green;" // bruke class
+    h1Element.classList.add("green-text")
 }
 
 buttonElementGreen.addEventListener("click", makeItGreen)
 
 
-
-
-
-// II. Handle the red-color button:
-// 1. Grab the red-button element with querySelector:
-let buttonElementRed = document.querySelector("#button-red")
-// 2. To see if it worked, we can then console.log it.
-
-// 3. Try to use addEventListener...
-
-
 function makeItRed() {
-    // Function shall change the color of the H1 element to green
-
-    // 1. Grab the h1 element:
-    let h1Element = document.querySelector("h1")
-    // console.log(h1Element)
-    h1Element.style = "color: red;"
+    h1Element.classList.add("red-text")
 }
 
 buttonElementRed.addEventListener("click", makeItRed)

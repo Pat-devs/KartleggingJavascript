@@ -7,43 +7,12 @@ body {
     color: aqua;
 }
 
-button {
-    background-color: aqua;
+.green-text {
+    color: green;
 }
-
-.some-text {
-    color: blueviolet;
+.red-text {
+    color: red;
 }
-
-/* 
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-
-HEX;
-
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-A
-B
-C
-D
-E
-F
-
-*/
+.black-text {
+    color: black;
+}
