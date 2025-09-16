@@ -11,14 +11,15 @@ let buttonElementBlack = document.querySelector("#button-blackß")
 
 function makeItGreen() {
     // h1Element.style = "color: green;" // bruke class
-    h1Element.classList.add("green-text")
+    // h1Element.classList.add("green-text")
+    h1Element.className = "green-text" // erstatter klasse med det vi skriver bak = tegn
 }
 
 buttonElementGreen.addEventListener("click", makeItGreen)
 
 
 function makeItRed() {
-    h1Element.classList.add("red-text")
+    h1Element.className = "red-text"
 }
 
 buttonElementRed.addEventListener("click", makeItRed)
