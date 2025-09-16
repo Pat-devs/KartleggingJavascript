@@ -14,6 +14,9 @@ let buttonPlus = document.querySelector("#button-plus")
 function increase() {
     number = number + 1 // increment the number
     currentNumberEl.textContent = number // change the html text to a value
+
+    // run the function that checks the condition
+    checkCondition()
 }
 
 buttonPlus.addEventListener("click", increase)
@@ -31,21 +34,21 @@ function decrease() {
 
 buttonMinus.addEventListener("click", decrease)
 
-// Conditionals in javascript
+
+
+// buttonPlus.addEventListener("click", checkCondition)
 
 
 
+function checkCondition() {
+    // Conditionals in javascript
 
+    // check if number is equal to with the comparison operator (==)
+    if (number == 5) {
+        console.log("Great news, the number is 5!")
+    }
+    else {
+        console.log("The number is not 5 yet...")
+    }
 
-
-
-
-
-
-
-
-
-// check if number is equal to with the comparison operator (==)
-if (number == 5) {
-    console.log("Great news, the number is 5!")
 }
