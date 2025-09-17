@@ -14,6 +14,7 @@
 let value1;
 let value2;
 
+
 // let isPair = false
 
 let score = 0
@@ -34,7 +35,7 @@ function diceRoll() {
 value1 = diceRoll() 
 value2 = diceRoll()
 
-console.log("You got: ", value1, value2)
+// console.log("You got: ", value1, value2)
 
 
 // calculate player score
@@ -51,7 +52,12 @@ score = value1 + value2
 if (value1 == value2) {
     score = score * 2
 
-    return
 }
 
-console.log("Your score is ", score)
+// console.log("Your score is ", score)
+
+// eksemepl liste (eller Array på engelsk)
+let myNumbers = ["hei",1244,1624,2457]
+
+console.log(myNumbers)
+
