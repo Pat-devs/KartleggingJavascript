@@ -57,7 +57,27 @@ if (value1 == value2) {
 // console.log("Your score is ", score)
 
 // eksemepl liste (eller Array på engelsk)
-let myNumbers = ["hei",1244,1624,2457]
+let myArray = [135, 7856,1624,2457]
 
-console.log(myNumbers)
+// hente hele listen:
+console.log(myArray)
 
+// hente bare deler fra listen:
+
+console.log(myArray[0], myArray[3])
+
+let num1 = 2
+let num2 = 2
+
+console.log(num1 + num2)
+
+let groceryShoppingList = []
+
+// add one item to end of the array
+groceryShoppingList.push("bread")
+
+
+// add two items  to end of the array at once
+groceryShoppingList.push("butter", "milk")
+
+console.log(groceryShoppingList)
