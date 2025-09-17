@@ -1,54 +1,21 @@
-// get the current number element
-let currentNumberEl = document.querySelector("#current-number")
-// get the button elements and store them as variables, for ease of access
+
+let userAge = 70
 
 
-// set number to a value with the assignment operator (=)
-let number = 0
+// children, adults, seniors
 
 
-
-let buttonPlus = document.querySelector("#button-plus")
-// Function increases the variable called number with + 1
-// And then displays that number in the textContent property of an element called currentNumberEl
-function increase() {
-    number = number + 1 // increment the number
-    currentNumberEl.textContent = number // change the html text to a value
-
-    // run the function that checks the condition
-    checkCondition()
+// 1. check if user is a child
+if (userAge < 18) {
+    console.log("user is a child")
 }
+else {
+    console.log("User is not a child...")
 
-buttonPlus.addEventListener("click", increase)
-
-
-
-
-let buttonMinus = document.querySelector("#button-minus")
-// Function increases the variable called number with + 1
-// And then displays that number in the textContent property of an element called currentNumberEl
-function decrease() {
-    number = number - 1 // increment the number
-    currentNumberEl.textContent = number // change the html text to a value
-}
-
-buttonMinus.addEventListener("click", decrease)
-
-
-
-// buttonPlus.addEventListener("click", checkCondition)
-
-
-
-function checkCondition() {
-    // Conditionals in javascript
-
-    // check if number is equal to with the comparison operator (==)
-    if (number == 5) {
-        console.log("Great news, the number is 5!")
+    if (userAge > 60) {
+        console.log("user is a senior")
     }
     else {
-        console.log("The number is not 5 yet...")
+        console.log("user is an adult")
     }
-
 }
