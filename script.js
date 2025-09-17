@@ -60,16 +60,16 @@ if (value1 == value2) {
 let myArray = [135, 7856,1624,2457]
 
 // hente hele listen:
-console.log(myArray)
+// console.log(myArray)
 
 // hente bare deler fra listen:
 
-console.log(myArray[0], myArray[3])
+// console.log(myArray[0], myArray[3])
 
 let num1 = 2
 let num2 = 2
 
-console.log(num1 + num2)
+// console.log(num1 + num2)
 
 let groceryShoppingList = []
 
@@ -80,4 +80,21 @@ groceryShoppingList.push("bread")
 // add two items  to end of the array at once
 groceryShoppingList.push("butter", "milk")
 
-console.log(groceryShoppingList)
+ console.log(groceryShoppingList)
+
+
+
+let diceRolls = []
+
+// diceRolls.push(diceRoll(), diceRoll(),  diceRoll(),  diceRoll(),  diceRoll())
+
+// console.log(diceRolls)
+
+// instead of hard coding diceRolls.push with new items we can use a loop:
+
+// for ("counter"; "condition"; "incrementation rule")
+
+for (let counter = 0; counter < 5; counter += 1) {
+    diceRolls.push(diceRoll())
+}
+console.log(diceRolls)
