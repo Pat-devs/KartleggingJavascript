@@ -10,16 +10,13 @@
 
 
 
-// 1. Can roll a dice
 
-// 2. Can compare different dice rolls?
+let value1;
+let value2;
 
-// 3. Can give score based on dice rolls 
+// let isPair = false
 
-let value1 = 0
-let value2 = 0
-
-
+let score = 0
 
 // We want this function to roll a dice result and return it, so that we can do something with it later
 // not just console.log it.
@@ -28,19 +25,33 @@ function diceRoll() {
     let dice = Math.ceil( Math.random() * 6 ) // gir tilfeldig heltall mellom 1 og 6
     // console.log("Your lucky number is ", dice)
 
-    return dice
-    //value1 = dice
+    return dice // this statement allows the function to give back a value from its callee
 }
 
-// diceRoll()
+// mer om return statmenent: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return
 
-function giveMe5() {
-    return dice
+
+value1 = diceRoll() 
+value2 = diceRoll()
+
+console.log("You got: ", value1, value2)
+
+
+// calculate player score
+
+// the score is the sum of two dice
+// if dices match, score is mulitplied by 2
+
+// example: dices: 1 & 2 = score of 3
+// example2: dices: 3 & 3 = score 6 x 2 = 12
+
+score = value1 + value2
+
+// if dices are same, double the score
+if (value1 == value2) {
+    score = score * 2
+
+    return
 }
 
-let something = giveMe5()
-
-console.log(giveMe5())
-console.log(giveMe5())
-console.log(giveMe5())
-console.log(giveMe5())
+console.log("Your score is ", score)
