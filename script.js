@@ -98,3 +98,5 @@ for (let counter = 0; counter < 5; counter += 1) {
     diceRolls.push(diceRoll())
 }
 console.log(diceRolls)
+
+// mdn for loop: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
