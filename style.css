@@ -2,13 +2,7 @@ body {
     color: wheat;
     background-color: #444;
 }
-
-.green-text {
-    color: green;
-}
-.red-text {
-    color: red;
-}
-.black-text {
-    color: black;
+#score {
+    font-size: 20px;
+    font-weight: bold;
 }
