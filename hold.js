@@ -1,3 +1,76 @@
+
+// a person 
+
+// let name = "Patryk"
+// let age = 45
+// let city = "Porsgrunn"
+// let gender = "Male"
+
+// a person as an object
+
+// to declare an object we still use "let nameOfVariable and = " but then we add {} 
+let person = {
+    name: "Patryk",
+    age: 46,
+    city: "Porsgrunn",
+    gender: "Male",
+    greet() {
+        console.log("Hi my name is ", this.name, " I am ", this.age, " and i live in ", this.city)
+    } 
+}
+
+let person2 = {
+    name: "Bob",
+    age: 33,
+    city: "Bergen",
+    gender: "Male",
+    greet() {
+        console.log("Hi my name is ", this.name, " I am ", this.age, " and i live in ", this.city)
+    } 
+}
+
+// function declaration
+function greet() {
+    console.log("Hi am just a function")
+} 
+
+greet()
+
+person.greet()
+
+person2.greet()
+
+// console.log(person)
+
+
+// Accessing a specific object property, syntax: Object.propertyname
+// example: person.age:
+// console.log(person.age)
+
+person.age += 5 
+person.city = "Oslo"
+
+
+// console.log(person)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function diceRoll() {
 
     let dice = Math.ceil( Math.random() * 6 ) // gir tilfeldig heltall mellom 1 og 6
